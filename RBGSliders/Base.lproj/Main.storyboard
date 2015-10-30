@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUn-gD-BWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="371"/>
+            <point key="canvasLocation" x="207" y="1191"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="141" y="468" width="38" height="30"/>
                                 <state key="normal" title="Open"/>
                                 <connections>
-                                    <segue destination="gxX-WM-9Ue" kind="show" id="l9Y-DP-N96"/>
+                                    <segue destination="gxX-WM-9Ue" kind="show" identifier="openColor" id="l9Y-DP-N96"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,6 +89,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xvb-Yk-Jq8" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qHN-YM-lDs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

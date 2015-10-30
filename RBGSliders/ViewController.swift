@@ -31,13 +31,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "openColor") {
+            let newViewController = segue.destinationViewController
+            newViewController.view.backgroundColor = colorSquare.backgroundColor
+        }
+    }
+    
     @IBAction func updateBackgroundColor() {
         let red = CGFloat(redSlider.value)
         let green = CGFloat(greenSlider.value)
         let blue = CGFloat(blueSlider.value)
         
         colorSquare.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
-
+        
+        
+        
     }
     
 }
